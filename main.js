@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const links=[...document.querySelectorAll('.navlinks a')];const current=location.pathname.split('/').pop()||'index.html';links.forEach(a=>{const target=(a.getAttribute('href')||'').split('#')[0];if(target===current)a.classList.add('active')});});
